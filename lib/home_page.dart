@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:authentication_ffm/GuestMode/home.dart';
 import 'package:authentication_ffm/login.dart';
 import 'package:authentication_ffm/signup.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   ),SizedBox(height:20,),
                   InkWell(
                     onTap: (){
-          
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> GuestHomePage()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,

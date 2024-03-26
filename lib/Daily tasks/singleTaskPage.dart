@@ -36,7 +36,7 @@ class _SingleTaskPageState extends State<SingleTaskPage> {
     });
   }
 
-  taskCompleteStatus(String taskIndex)async{
+    taskCompleteStatus(String taskIndex)async{
     SharedPreferences pref = await SharedPreferences.getInstance();
     List<String> previousList =  pref.getStringList("completedTasks") ?? [];
     previousList.add(taskIndex);

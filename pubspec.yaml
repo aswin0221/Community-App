@@ -46,6 +46,17 @@ dependencies:
   flutter_spinkit: ^5.2.0
   connectivity_plus: ^5.0.2
   shared_preferences: ^2.2.2
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  image_picker: ^1.0.7
+  firebase_storage: ^11.6.10
+  flutter_markdown: ^0.6.22
+  font_awesome_flutter: ^10.7.0
+  salomon_bottom_bar: ^3.3.2
+  google_nav_bar: ^5.0.6
+  hu:
+    git:
+      url
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +87,9 @@ flutter:
     - assets/icon2.png
     - assets/icon3.png
     - assets/welcome.svg
+    - assets/gym.jpg
+    - assets/hello.jpg
+    - assets/motivation.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -88,11 +102,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+#  fonts:
+#    - family: customicon
+#      fonts:
+#        - asset: assets/icomoon.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
